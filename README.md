@@ -1,11 +1,11 @@
 # Malaria
 #####################################################
                                                     
-# written by Rija Tonny C. Ramarolahy               
+ written by Rija Tonny C. Ramarolahy               
                                                      
-# 2020                                               
+ 2020                                               
                                                     
-# email: rija@aims.edu.gh / minuramaro@gmail.com   
+ email: rija@aims.edu.gh / minuramaro@gmail.com   
                                                      
 #####################################################
 
@@ -19,6 +19,7 @@ The code is made of two part: training and testing model & detection of parasite
 
 In this code we used two datasets.
 1-The first data contains individual cells from https://ceb.nlm.nih.gov/repositories/malaria-datasets/.
+
 2-The second contains thick smear image from http://air.ug/microscopy/.
 
 We created a CNN model and decided to train on both datasets.

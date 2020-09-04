@@ -13,7 +13,7 @@
 
 Malaria blood detector based Deep Learning.
 
-These are the codes used in the project.
+These are the codes used in the project: "Malaria blood detector based Deep Learning" .
 
 The code is made of two part: training and testing model & detection of parasites on an image(automated detection).
 
@@ -53,9 +53,9 @@ In case you don't want to create a model, you can download my models here https:
 
 These codes were runned on tensorflow 2.1.0
 
-NB: -You need some image of thin smear and thick smear for the second part of the code. For thick smear, you can use the data itself.
+NB:-You need some image of thin smear and thick smear for the second part of the code. For thick smear, you can use the data itself.
 For thin smear, you can try this https://drive.google.com/drive/folders/1EMJ7dg0TBs34sDWcj7Tj1wozXJC0wtbc
 
-    -Everyone can improve the codes especially for the automated detection.
+   -Everyone can improve the codes especially for the automated detection.
 
-    -Based on the segmentation code(thin_evaluation.py), you can also create a data from thin image datasets and re-train the model. 
+   -Based on the segmentation code(thin_evaluation.py), you can also create a data from thin image datasets and re-train the model. 

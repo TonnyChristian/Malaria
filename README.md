@@ -15,26 +15,24 @@ Malaria blood detector based Deep Learning.
 
 These are the codes used in the project: "Malaria blood detector based Deep Learning" .
 
-The code is made of two part: training and testing model & detection of parasites on an image(automated detection).
+The codes are made of two part: training and testing model & detection of parasites on an image(automated detection).
 
-In this code we used two datasets.
+In this project we used two datasets.
 
 1-The first data contains individual cells from https://ceb.nlm.nih.gov/repositories/malaria-datasets/.
 
 2-The second contains thick smear image from http://air.ug/microscopy/.
 
-We created a CNN model and decided to train on both datasets.
+In this case, we created a CNN model and decided to train on both datasets.
 
 So if you want to train by yourself, make sure that you have the datasets.
 And you can decide which data should you train. You can run main.py in the terminal and add the directory of the data that you want to train.
 
-For example: python3 main.py './cell_images' 
-
-In this case, you decided to train the individual cells datasets.
+For example: python3 main.py './cell_images' (In this case, you decided to train the individual cells datasets.)
 
 For this first dataset, it will be better if you use GPU. If you don't have, you can use google COLAB like I did.
 
-For the use of COLAB, you need to have the data of the individual cells i.e train, test, validation. 
+For the use of COLAB, you need to have the data of the individual cells i.e train, test and validation. 
 
 So you need to find a way to run the function data_preparation() inside Data_Ind_cells.py and save the data in your drive.
 If you got the data, then you can connect your drive to COLAB and run 'Training_ind_cells.ipynb'.
@@ -43,13 +41,13 @@ If you got the data, then you can connect your drive to COLAB and run 'Training_
 
 For the second part, the detection, you need an image of either thick nor thin blood smear and run the appropriate code. Make sure that you have the model before running the code.
 
-To run this code, you need to put the model and the image like this python3 thin_evaluation.py model image.
+To perform the detection, you need to put the model and the image like this python3 thin_evaluation.py model image.
 
 For example: python3 thin_evaluation.py models/CNN_ind_cells.h5 '2a_002.JPG' 
 
 For thick_evaluation.py, if you do not have the annotated data (.xml), you can comment line 86-95.
 
-In case you don't want to create a model, you can download my models here https://drive.google.com/file/d/1E2Bc_x_vF9p1idf-xBXjavAwdMeAQm6S/view?usp=sharing
+In case you don't want to create models, you can download my models here https://drive.google.com/file/d/1E2Bc_x_vF9p1idf-xBXjavAwdMeAQm6S/view?usp=sharing
 
 These codes were runned on tensorflow 2.1.0
 

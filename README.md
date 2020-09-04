@@ -17,7 +17,7 @@ These are the codes used in the project.
 
 The code is made of two part: training and testing model & detection of parasites on an image(automated detection).
 
-In this code we used two datasets.
+In this code we used two datasets.\\
 1-The first data contains individual cells from https://ceb.nlm.nih.gov/repositories/malaria-datasets/.
 
 2-The second contains thick smear image from http://air.ug/microscopy/.

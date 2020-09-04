@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 import sys 
 import time 
+from Data_thick import get_position_plasmodium
 
 
 ### function to look for overlapping 
@@ -96,7 +97,18 @@ def parasite_detection(image_name, model):
 			ymaxold = y+h
 			listold.append((xold,yold,xmaxold,ymaxold))
 
-
+	#showing the plasmodium from the annotated data if there is
+	bbox = get_position_plasmodium(image_name=image_name)
+	if len(bbox) == 0:
+		pass
+	else:
+		for box in bbox:
+			x = box[0]
+			y = box[2]
+			w = box[1] - box[0]
+			h = box[3] - box[2]
+			cv2.rectangle(image_copy, (x,y), (x+w, y+h),(255, 0, 0), 2)  #### blue rectangle for the plasmodium by the annotation
+			
 	elapsed_time = time.time() - t
             
 	cv2.imwrite(image_name+'detection.png', image_copy)

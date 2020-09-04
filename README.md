@@ -45,7 +45,7 @@ To perform the detection, you need to put the model and the image like this pyth
 
 For example: python3 thin_evaluation.py models/CNN_ind_cells.h5 '2a_002.JPG' 
 
-For thick_evaluation.py, if you do not have the annotated data (.xml), you can comment line 86-95.
+For thick_evaluation.py, if you do not have the annotated data (.xml), you can comment line 101-110.
 
 In case you don't want to create models, you can download my models here https://drive.google.com/file/d/1E2Bc_x_vF9p1idf-xBXjavAwdMeAQm6S/view?usp=sharing
 

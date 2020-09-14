@@ -51,7 +51,9 @@ In case you don't want to create models, you can download my models here https:/
 
 These codes were runned on tensorflow 2.1.0
 
-NB:-You need some image of thin smear and thick smear for the second part of the code. For thick smear, you can use the data itself.
+NB:-Check all needed directories and files before runing the codes, make sure the names of the directories and files are correct (you can change them).
+
+   -You need some image of thin smear and thick smear for the second part of the code. For thick smear, you can use the data itself.
 For thin smear, you can try this https://drive.google.com/drive/folders/1EMJ7dg0TBs34sDWcj7Tj1wozXJC0wtbc
 
    -Everyone can improve the codes especially for the automated detection.
